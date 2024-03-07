@@ -1,3 +1,6 @@
+import { title } from "process";
+import React, { Children } from "react";
+
 export type FeatureItemProps = {
   title: string;
   icon: string;
@@ -17,4 +20,9 @@ export type ButtonProps = {
   icon?: string;
   variant: string;
   full?: boolean;
+};
+
+export type FooterColumnProps = {
+  title: string;
+  children: React.ReactNode;
 };
