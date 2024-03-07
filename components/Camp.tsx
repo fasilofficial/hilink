@@ -1,19 +1,13 @@
 import { PEOPLE_URL } from "@/constants";
+import { CampSiteProps } from "@/types";
 import Image from "next/image";
-
-interface ICampProps {
-  backgroundImg: string;
-  title: string;
-  subtitle: string;
-  peopleJoined: string;
-}
 
 const CampSite = ({
   backgroundImg,
   title,
   subtitle,
   peopleJoined,
-}: ICampProps) => {
+}: CampSiteProps) => {
   return (
     <div
       className={`h-full w-full min-w-[1100px] ${backgroundImg} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}
